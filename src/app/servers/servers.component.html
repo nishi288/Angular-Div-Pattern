@@ -1,0 +1,11 @@
+<!--Author: Nishigandha Shendkar-->
+
+    <div class="container">
+            <div class="row text-center" *ngFor="let group of blocksGrouped; let i = index">
+                    <div class="col" *ngFor="let block of blocksGrouped[i]"  >
+                     <div class="demo" (click)="onSelect(block)" [class.active]="block==selectedDiv"></div>
+                    </div>
+                  </div>
+
+    </div>
+    
